@@ -1,5 +1,6 @@
 <H3>Name: CHANDRU . V</H3> 
 <H3>Register no.212224230043</H3>
+<H3>Date:08.10.2025</H3>
 <H3>Experiment No. 2 </H3>
 ## Implementation of Perceptron for Binary Classification
 # AIM:
@@ -48,7 +49,7 @@ STEP 9:For ‘N ‘ iterations ,do the following:<BR>
 STEP 10:Plot the error for each iteration <BR>
 STEP 11:Print the accuracy<BR>
 # PROGRAM:
-~~~
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -79,8 +80,8 @@ class Perceptron:
      return np.dot(x, self._w) + self._b
  def predict(self, x: np.array):
      return np.where(self.f(x) >= 0,1,-1)
-~~~
-~~~
+```
+```
 df = pd.read_csv("/content/iris (1).csv")
 print(df.head())
 # extract the label column
@@ -115,7 +116,7 @@ plt.plot(range(1,len(classifier.misclassified_samples)+1),classifier.misclassifi
 plt.xlabel('Epoch')
 plt.ylabel('Errors')
 plt.show()
-~~~
+```
 
 # OUTPUT:
 
